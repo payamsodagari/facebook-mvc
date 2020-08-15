@@ -1,0 +1,25 @@
+<%- include('./components/header') %>
+<h1>Well come to facebook</h1>
+<%- include('addFeed') %>
+
+<% if (result.length > 0 ) { %>
+    <% result.forEach(element => { %>
+        <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title"> <%= element.name %> </h5>
+              <p class="card-text"><%= element.message %></p>
+              <a href=/feed/<%= element._id %> class="card-link">see more</a>
+            </div>`
+
+            <%  var date = new Date() %>
+            <%= date %>
+            
+          </div>
+          
+    <% }); %>
+    <% } else { %>
+        there is no record
+    <% } %>
+    
+
+<%- include('./components/footer') %>

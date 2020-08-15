@@ -1,0 +1,16 @@
+<%- include('./components/header') %>
+
+<form method="POST" action=/feed>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name</label>
+      <input type="text" name='name' value=<%= result.name %> class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Message</label>
+      <input type="text" name="message" value=<%= result.message %> class="form-control" id="exampleInputPassword1" placeholder="message">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+<%- include('./components/footer') %>
+ 

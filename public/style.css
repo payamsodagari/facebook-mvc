@@ -1,0 +1,15 @@
+body {
+    color: brown;
+}
+
+.card {
+    margin: 10%;
+}
+
+form {
+    margin: 10%;
+}
+
+#err {
+    color: red;
+}
